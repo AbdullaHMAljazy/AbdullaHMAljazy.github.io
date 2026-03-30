@@ -9,19 +9,24 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
-            font-family: "Times New Roman", Times, serif; /* الخط الأكاديمي الكلاسيكي */
+            font-family: "Times New Roman", Times, serif;
             line-height: 1.6;
             color: #000;
             background-color: #fff;
         }
         h1, h2, h3 {
-            font-weight: normal; /* إلغاء الخط العريض جداً للعناوين لتبدو أكاديمية أكثر */
+            font-weight: normal;
+            margin-top: 0;
         }
         a {
-            color: #0000ee; /* لون الروابط الأزرق الكلاسيكي */
+            color: #0000ee;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         a:visited {
-            color: #551a8b; /* لون الروابط التي تم زيارتها */
+            color: #551a8b;
         }
         hr {
             border: 0;
@@ -37,6 +42,21 @@
             text-align: left; 
         }
         
+        /* تنسيق القسم العلوي (الصورة والمعلومات) */
+        .header-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 180px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
         /* إعدادات تبديل اللغة */
         .en { display: none; }
         html[lang="en"] .ar { display: none; }
@@ -50,13 +70,18 @@
     </div>
 
     <div class="ar">
-        <h1>عبدالله محمد الجازي</h1>
-        <p>
-            باحث في الرياضيات<br>
-            بكالوريوس في الرياضيات، جامعة الحسين بن طلال<br>
-            <strong>البريد الإلكتروني:</strong> [ضع بريدك الإلكتروني هنا]<br>
-            <strong>روابط:</strong> <a href="https://github.com/AbdullaHMAljazy">GitHub</a>
-        </p>
+        <div class="header-section">
+            <img src="profile.jpg" alt="عبدالله محمد الجازي" class="profile-pic">
+            <div>
+                <h1>عبدالله محمد الجازي</h1>
+                <p>
+                    باحث في الرياضيات<br>
+                    بكالوريوس في الرياضيات، جامعة الحسين بن طلال<br>
+                    <strong>البريد الإلكتروني:</strong> <a href="mailto:abdullah.aljazy@yahoo.com">abdullah.aljazy@yahoo.com</a><br>
+                    <strong>روابط:</strong> <a href="https://github.com/AbdullaHMAljazy" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
         
         <hr>
 
@@ -86,13 +111,18 @@
     </div>
 
     <div class="en">
-        <h1>Abdullah M. Al-jazy</h1>
-        <p>
-            Mathematician<br>
-            B.Sc. in Mathematics, Al-Hussein Bin Talal University<br>
-            <strong>Email:</strong> [Put your email here]<br>
-            <strong>Links:</strong> <a href="https://github.com/AbdullaHMAljazy">GitHub</a>
-        </p>
+        <div class="header-section">
+            <img src="profile.jpg" alt="Abdullah M Al-jazy" class="profile-pic">
+            <div>
+                <h1>Abdullah M. Al-jazy</h1>
+                <p>
+                    Mathematician<br>
+                    B.Sc. in Mathematics, Al-Hussein Bin Talal University<br>
+                    <strong>Email:</strong> <a href="mailto:abdullah.aljazy@yahoo.com">abdullah.aljazy@yahoo.com</a><br>
+                    <strong>Links:</strong> <a href="https://github.com/AbdullaHMAljazy" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
         
         <hr>
 
