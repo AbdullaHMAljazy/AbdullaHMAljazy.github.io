@@ -3,155 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عبدالله محمد الجازي | Abdullah M Al-jazy</title>
+    <title>Abdullah M Al-jazy</title>
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --text-color: #333;
-            --bg-color: #f9f9f9;
-        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-            transition: all 0.3s ease;
-        }
-        header {
-            background: var(--primary-color);
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-            position: relative;
-        }
-        .lang-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: 1rem;
-        }
-        html[dir="ltr"] .lang-btn {
-            right: auto;
-            left: 20px;
-        }
-        .container {
             max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: "Times New Roman", Times, serif; /* الخط الأكاديمي الكلاسيكي */
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
         }
-        section {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        h1, h2, h3 {
+            font-weight: normal; /* إلغاء الخط العريض جداً للعناوين لتبدو أكاديمية أكثر */
         }
-        h1, h2, h3 { color: var(--primary-color); }
-        h1 { margin: 0; font-size: 2.5rem; }
-        .subtitle { font-size: 1.2rem; opacity: 0.9; margin-top: 0.5rem; }
-        
-        ul { padding-inline-start: 20px; }
-        li { margin-bottom: 10px; }
+        a {
+            color: #0000ee; /* لون الروابط الأزرق الكلاسيكي */
+        }
+        a:visited {
+            color: #551a8b; /* لون الروابط التي تم زيارتها */
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .lang-toggle {
+            font-size: 0.9em;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        html[dir="rtl"] .lang-toggle {
+            text-align: left; 
+        }
         
         /* إعدادات تبديل اللغة */
         .en { display: none; }
         html[lang="en"] .ar { display: none; }
         html[lang="en"] .en { display: block; }
-        
-        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #777; }
-        a { color: var(--accent-color); text-decoration: none; }
     </style>
 </head>
 <body>
 
-<header>
-    <button class="lang-btn" onclick="toggleLanguage()">English / عربي</button>
+    <div class="lang-toggle">
+        <a href="#" onclick="toggleLanguage(); return false;">[ Switch to English ]</a>
+    </div>
+
     <div class="ar">
         <h1>عبدالله محمد الجازي</h1>
-        <p class="subtitle">رياضياتي | مهتم بالتحليل الدالي والمنطق الرياضي</p>
+        <p>
+            باحث في الرياضيات<br>
+            بكالوريوس في الرياضيات، جامعة الحسين بن طلال<br>
+            <strong>البريد الإلكتروني:</strong> [ضع بريدك الإلكتروني هنا]<br>
+            <strong>روابط:</strong> <a href="https://github.com/AbdullaHMAljazy">GitHub</a>
+        </p>
+        
+        <hr>
+
+        <h2>الاهتمامات البحثية والعلمية</h2>
+        <ul>
+            <li><strong>الرياضيات البحتة:</strong> التحليل الدالي (Functional Analysis)، الهندسة الجبرية، والفضاءات المترية.</li>
+            <li><strong>المنطق والبرهنة الآلية:</strong> استخدام لغة Lean4 للتحقق من الإثباتات الرياضية.</li>
+            <li><strong>الطباعة العلمية:</strong> تنضيد النصوص الرياضية المتقدمة باستخدام LaTeX.</li>
+        </ul>
+
+        <h2>المشاريع الحالية</h2>
+        <ul>
+            <li>مشروع تأليف سلسلة كتب رياضيات متقدمة باللغة العربية بأسلوب "بورباكي" الرصين، لتوفير مراجع عالية الجودة للتعلم الذاتي.</li>
+            <li>إعداد محتوى تعليمي متخصص في التحليل الدالي.</li>
+        </ul>
+
+        <h2>تقنيات وأدوات</h2>
+        <ul>
+            <li><strong>البرمجة وعلوم البيانات:</strong> C++, Go.</li>
+            <li><strong>إدارة المعرفة البحثية:</strong> استخدام تطبيق Obsidian ومنهجية Zettelkasten.</li>
+        </ul>
+
+        <h2>اهتمامات أخرى</h2>
+        <p>
+            العلوم الإسلامية واللغويات العربية (مثل الآجرومية)، وتاريخ سكة حديد الحجاز (تحديداً منطقة معان وبطن الغول).
+        </p>
     </div>
+
     <div class="en">
-        <h1>Abdullah M Al-jazy</h1>
-        <p class="subtitle">Mathematician | Functional Analysis & Mathematical Logic</p>
+        <h1>Abdullah M. Al-jazy</h1>
+        <p>
+            Mathematician<br>
+            B.Sc. in Mathematics, Al-Hussein Bin Talal University<br>
+            <strong>Email:</strong> [Put your email here]<br>
+            <strong>Links:</strong> <a href="https://github.com/AbdullaHMAljazy">GitHub</a>
+        </p>
+        
+        <hr>
+
+        <h2>Research Interests</h2>
+        <ul>
+            <li><strong>Pure Mathematics:</strong> Functional Analysis, Algebraic Geometry, and Metric Spaces.</li>
+            <li><strong>Logic & Formal Verification:</strong> Using Lean4 for mathematical proof verification.</li>
+            <li><strong>Scientific Typesetting:</strong> Advanced mathematical typesetting using LaTeX.</li>
+        </ul>
+
+        <h2>Current Projects</h2>
+        <ul>
+            <li>Authoring a series of advanced Arabic mathematics textbooks in the rigorous Bourbaki style to provide high-quality resources for self-learners.</li>
+            <li>Developing educational content in Functional Analysis.</li>
+        </ul>
+
+        <h2>Tech & Tools</h2>
+        <ul>
+            <li><strong>Programming & Data Science:</strong> C++, Go.</li>
+            <li><strong>Knowledge Management:</strong> Obsidian and the Zettelkasten method.</li>
+        </ul>
+
+        <h2>Other Interests</h2>
+        <p>
+            Islamic sciences, Arabic linguistics, and the history of the Hejaz Railway (specifically the Ma'an and Batn al-Ghoul regions).
+        </p>
     </div>
-</header>
 
-<div class="container">
-    <section id="about">
-        <div class="ar">
-            <h2>نبذة تعريفية</h2>
-            <p>حاصل على درجة البكالوريوس في الرياضيات من جامعة الحسين بن طلال. أركز في بحثي ودراستي على الرياضيات البحتة، تحديداً التحليل الدالي (Functional Analysis) والهندسة الجبرية. أسعى دائماً لربط الرياضيات النظرية الرصينة بالتطبيقات الحديثة وعلوم البيانات، مع اهتمام خاص بتكنولوجيا إثبات النظريات وتطوير المحتوى العلمي.</p>
-        </div>
-        <div class="en">
-            <h2>About Me</h2>
-            <p>I hold a B.Sc. in Mathematics from Al-Hussein Bin Talal University. My studies and research focus on pure mathematics, specifically Functional Analysis and Algebraic Geometry. I aim to connect rigorous theoretical mathematics with modern applications and data science, with a special interest in theorem proving technologies and scientific content development.</p>
-        </div>
-    </section>
-
-    <section id="interests">
-        <div class="ar">
-            <h2>الاهتمامات والمشاريع</h2>
-            <ul>
-                <li><strong>الرياضيات البحتة:</strong> تعمق في الفضاءات المترية، التحليل الدالي، والهندسة الجبرية.</li>
-                <li><strong>التأليف والطباعة العلمية:</strong> العمل على مشروع تأليف سلسلة كتب رياضية متقدمة باللغة العربية بأسلوب "بورباكي" الرصين باستخدام نظام <strong>LaTeX</strong>.</li>
-                <li><strong>البرهنة الآلية (Theorem Proving):</strong> استخدام وتعلم بيئة <strong>Lean4</strong> للتحقق من الإثباتات الرياضية.</li>
-                <li><strong>البرمجة والتقنية:</strong> الاهتمام بعلوم البيانات، لغات البرمجة (مثل C++ و Go)، وتطبيقات المصادر المفتوحة.</li>
-                <li><strong>إدارة المعرفة:</strong> استخدام أسلوب Zettelkasten وتطبيق Obsidian لزيادة الإنتاجية وتنظيم البحث العلمي.</li>
-                <li><strong>اهتمامات أخرى:</strong> اللغويات العربية (مثل الآجرومية)، وتاريخ سكة حديد الحجاز في منطقة معان وبطن الغول.</li>
-            </ul>
-        </div>
-        <div class="en">
-            <h2>Interests & Projects</h2>
-            <ul>
-                <li><strong>Pure Mathematics:</strong> Deep interest in Metric Spaces, Functional Analysis, and Algebraic Geometry.</li>
-                <li><strong>Scientific Typesetting & Authoring:</strong> Working on a project to author a series of advanced Arabic mathematics textbooks in the rigorous Bourbaki style using <strong>LaTeX</strong>.</li>
-                <li><strong>Theorem Proving:</strong> Learning and utilizing the <strong>Lean4</strong> environment for formal mathematical verification.</li>
-                <li><strong>Programming & Tech:</strong> Exploring data science, programming languages (such as C++ and Go), and open-source software.</li>
-                <li><strong>Knowledge Management:</strong> Utilizing the Zettelkasten method and Obsidian for productivity and research organization.</li>
-                <li><strong>Other Interests:</strong> Arabic linguistics, and the history of the Hejaz Railway in the Ma'an region.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="ar">
-            <h2>التواصل</h2>
-            <p>يمكنك الاطلاع على أعمالي ومشاريعي عبر حسابي في <a href="https://github.com/AbdullaHMAljazy" target="_blank">GitHub</a>.</p>
-        </div>
-        <div class="en">
-            <h2>Contact</h2>
-            <p>You can check out my work and projects on my <a href="https://github.com/AbdullaHMAljazy" target="_blank">GitHub</a> profile.</p>
-        </div>
-    </section>
-</div>
-
-<footer>
-    <span class="ar">&copy; 2026 عبدالله الجازي. مبني بواسطة GitHub Pages.</span>
-    <span class="en">&copy; 2026 Abdullah Al-jazy. Hosted on GitHub Pages.</span>
-</footer>
-
-<script>
-    function toggleLanguage() {
-        const html = document.documentElement;
-        if (html.lang === 'ar') {
-            html.lang = 'en';
-            html.dir = 'ltr';
-        } else {
-            html.lang = 'ar';
-            html.dir = 'rtl';
+    <script>
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const toggleLink = document.querySelector('.lang-toggle a');
+            if (html.lang === 'ar') {
+                html.lang = 'en';
+                html.dir = 'ltr';
+                toggleLink.innerHTML = '[ التبديل للعربية ]';
+                document.querySelector('.lang-toggle').style.textAlign = 'right';
+            } else {
+                html.lang = 'ar';
+                html.dir = 'rtl';
+                toggleLink.innerHTML = '[ Switch to English ]';
+                document.querySelector('.lang-toggle').style.textAlign = 'left';
+            }
         }
-    }
-</script>
-
+    </script>
 </body>
 </html>
