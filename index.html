@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah M Al-jazy</title>
+    <title>Abdullah M. Al-jazy</title>
     <style>
         body {
             max-width: 800px;
@@ -33,16 +33,8 @@
             border-top: 1px solid #ccc;
             margin: 20px 0;
         }
-        .lang-toggle {
-            font-size: 0.9em;
-            text-align: left;
-            margin-bottom: 20px;
-        }
-        html[dir="rtl"] .lang-toggle {
-            text-align: left; 
-        }
         
-        /* تنسيق القسم العلوي (الصورة والمعلومات) */
+        /* Profile Section Formatting */
         .header-section {
             display: flex;
             align-items: flex-start;
@@ -56,131 +48,53 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-
-        /* إعدادات تبديل اللغة */
-        .en { display: none; }
-        html[lang="en"] .ar { display: none; }
-        html[lang="en"] .en { display: block; }
     </style>
 </head>
 <body>
 
-    <div class="lang-toggle">
-        <a href="#" onclick="toggleLanguage(); return false;">[ Switch to English ]</a>
-    </div>
-
-    <div class="ar">
-        <div class="header-section">
-            <img src="profile.jpg" alt="عبدالله محمد الجازي" class="profile-pic">
-            <div>
-                <h1>عبدالله محمد الجازي</h1>
-                <p>
-                    باحث في الرياضيات<br>
-                    بكالوريوس في الرياضيات، جامعة الحسين بن طلال<br>
-                    <strong>البريد الإلكتروني:</strong> <a href="mailto:abdullah.aljazy@yahoo.com">abdullah.aljazy@yahoo.com</a><br>
-                    <strong>روابط:</strong> <a href="https://github.com/AbdullaHMAljazy" target="_blank">GitHub</a>
-                </p>
-            </div>
+    <div class="header-section">
+        <img src="profile.jpg" alt="Abdullah M. Al-jazy" class="profile-pic">
+        <div>
+            <h1>Abdullah M. Al-jazy</h1>
+            <p>
+                Mathematician<br>
+                B.Sc. in Mathematics, Al-Hussein Bin Talal University<br>
+                <strong>Email:</strong> <a href="mailto:abdullah.aljazy@yahoo.com">abdullah.aljazy@yahoo.com</a><br>
+                <strong>Links:</strong> <a href="https://github.com/AbdullaHMAljazy" target="_blank">GitHub</a>
+            </p>
         </div>
-        
-        <hr>
-
-        <h2>الاهتمامات البحثية والعلمية</h2>
-        <ul>
-            <li><strong>الرياضيات البحتة:</strong>  
-              الهندسة الجبرية ، مرأة التناظر الهومولوجي.</li>
-            <li><strong>المنطق والبرهنة الآلية:</strong> استخدام لغة Lean4 للتحقق من الإثباتات الرياضية.</li>
-            <li><strong>الطباعة العلمية:</strong> تنضيد النصوص الرياضية المتقدمة باستخدام LaTeX.</li>
-        </ul>
-
-        <h2>المشاريع الحالية</h2>
-        <ul>
-            <li>مشروع تأليف سلسلة كتب رياضيات متقدمة باللغة العربية بأسلوب "بورباكي" الرصين، لتوفير مراجع عالية الجودة للتعلم الذاتي.</li>
-            <li>إعداد محتوى تعليمي متخصص في التحليل الدالي.</li>
-        </ul>
-
-<h2>الندوات والحلقات الدراسية</h2>
-        <ul>
-            <li>[اسم الندوة أو الحلقة الدراسية]، [الجامعة أو المنصة]، [التاريخ].</li>
-            </ul>
-
-
-        
-        <h2>تقنيات وأدوات</h2>
-        <ul>
-            <li><strong>البرمجة وعلوم البيانات:</strong> C++, python.</li>
-            <li><strong>إدارة المعرفة البحثية:</strong> استخدام تطبيق Obsidian ومنهجية Zettelkasten.</li>
-        </ul>
-
-        <h2>اهتمامات أخرى</h2>
-        <p>
-            .العلوم الإسلامية واللغويات العربية (مثل الآجرومية)، .
-        </p>
     </div>
+    
+    <hr>
 
-    <div class="en">
-        <div class="header-section">
-            <img src="profile.jpg" alt="Abdullah M Al-jazy" class="profile-pic">
-            <div>
-                <h1>Abdullah M. Al-jazy</h1>
-                <p>
-                    Mathematician<br>
-                    B.Sc. in Mathematics, Al-Hussein Bin Talal University<br>
-                    <strong>Email:</strong> <a href="mailto:abdullah.aljazy@yahoo.com">abdullah.aljazy@yahoo.com</a><br>
-                    <strong>Links:</strong> <a href="https://github.com/AbdullaHMAljazy" target="_blank">GitHub</a>
-                </p>
-            </div>
-        </div>
-        
-        <hr>
+    <h2>Research Interests</h2>
+    <ul>
+        <li><strong>Pure Mathematics:</strong> Algebraic Geometry, Homological Mirror Symmetry.</li>
+        <li><strong>Logic & Formal Verification:</strong> Using Lean4 for mathematical proof verification.</li>
+        <li><strong>Scientific Typesetting:</strong> Advanced mathematical typesetting using LaTeX.</li>
+    </ul>
 
-        <h2>Research Interests</h2>
-        <ul>
-            <li><strong>Pure Mathematics:</strong> Algebraic Geometry, Homological Mirror Symmetry.</li>
-            <li><strong>Logic & Formal Verification:</strong> Using Lean4 for mathematical proof verification.</li>
-            <li><strong>Scientific Typesetting:</strong> Advanced mathematical typesetting using LaTeX.</li>
-        </ul>
+    <h2>Current Projects</h2>
+    <ul>
+        <li>Authoring a series of advanced Arabic mathematics textbooks in the rigorous Bourbaki style to provide high-quality resources for self-learners.</li>
+        <li>Developing educational content in Functional Analysis.</li>
+    </ul>
 
-        <h2>Current Projects</h2>
-        <ul>
-            <li>Authoring a series of advanced Arabic mathematics textbooks in the rigorous Bourbaki style to provide high-quality resources for self-learners.</li>
-            <li>Developing educational content in Functional Analysis.</li>
-        </ul>
+    <h2>Seminars</h2>
+    <ul>
+        <li>[Seminar Title], [Institution/Platform], [Date].</li>
+    </ul>
+    
+    <h2>Tech & Tools</h2>
+    <ul>
+        <li><strong>Programming & Data Science:</strong> C++, python.</li>
+        <li><strong>Knowledge Management:</strong> Obsidian and the Zettelkasten method.</li>
+    </ul>
 
-<h2>Seminars</h2>
-        <ul>
-            <li>[Seminar Title], [Institution/Platform], [Date].</li>
-            </ul>
+    <h2>Other Interests</h2>
+    <p>
+        Islamic sciences, Arabic linguistics.
+    </p>
 
-        
-        <h2>Tech & Tools</h2>
-        <ul>
-            <li><strong>Programming & Data Science:</strong> C++,python.</li>
-            <li><strong>Knowledge Management:</strong> Obsidian and the Zettelkasten method.</li>
-        </ul>
-
-        <h2>Other Interests</h2>
-        <p>
-            Islamic sciences, Arabic linguistics.
-        </p>
-    </div>
-
-    <script>
-        function toggleLanguage() {
-            const html = document.documentElement;
-            const toggleLink = document.querySelector('.lang-toggle a');
-            if (html.lang === 'ar') {
-                html.lang = 'en';
-                html.dir = 'ltr';
-                toggleLink.innerHTML = '[ التبديل للعربية ]';
-                document.querySelector('.lang-toggle').style.textAlign = 'right';
-            } else {
-                html.lang = 'ar';
-                html.dir = 'rtl';
-                toggleLink.innerHTML = '[ Switch to English ]';
-                document.querySelector('.lang-toggle').style.textAlign = 'left';
-            }
-        }
-    </script>
 </body>
 </html>
