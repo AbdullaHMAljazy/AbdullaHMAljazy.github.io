@@ -33,7 +33,13 @@
                 it.el.classList.toggle('hidden', filtering && !ok);
                 if (ok) { any = true; shownItems++; }
             });
-            // hide a Books/Courses column whose items are all filtered out
+            // hide a list (and its heading) whose items are all filtered out, then empty columns
+            Array.prototype.forEach.call(t.querySelectorAll('.books, .courses'), function (list) {
+                var empty = filtering && !list.querySelector('li:not(.hidden)');
+                list.classList.toggle('hidden', empty);
+                var h = list.previousElementSibling;
+                if (h && h.tagName === 'H3') { h.classList.toggle('hidden', empty); }
+            });
             Array.prototype.forEach.call(t.querySelectorAll('.col'), function (col) {
                 col.classList.toggle('hidden', filtering && !col.querySelector('li:not(.hidden)'));
             });
