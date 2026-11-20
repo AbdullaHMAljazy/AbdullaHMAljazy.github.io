@@ -3,107 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah M. Al-jazy</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Abdullah M. Al-jazy — Mathematician</title>
+    <meta name="description" content="Abdullah M. Al-jazy, graduate student in mathematics at The University of Jordan, interested in analytic and computational number theory and the Langlands program.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abdullah M. Al-jazy — Mathematician">
+    <meta property="og:description" content="Graduate student in mathematics at The University of Jordan. Talks, a free mathematics roadmap, and more.">
+    <meta property="og:url" content="https://abdullahmaljazy.github.io/">
+    <meta property="og:image" content="https://abdullahmaljazy.github.io/profile.jpg">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-    <div class="header-section">
-        <img src="profile.jpg" alt="Abdullah M. Al-jazy" class="profile-pic">
-        <div>
-            <h1>Abdullah M. Al-jazy</h1>
-            <p>
-                Mathematician<br>
-                Graduate student, The University of Jordan<br>
-                B.Sc. in Mathematics, Al-Hussein Bin Talal University<br>
-                <strong>Email:</strong> <a href="mailto:abdullah.aljazy@yahoo.com">abdullah.aljazy@yahoo.com</a><br>
-                <strong>Links:</strong> <a href="https://github.com/AbdullaHMAljazy" target="_blank">GitHub</a> |
-                <a href="https://www.linkedin.com/in/abdullah-m-al-jazy-04315b27a" target="_blank">LinkedIn</a> |
-                <a href="https://mathoverflow.net/users/517112/abdullah-m-al-jazy" target="_blank">MathOverflow</a> |
-                <a href="https://www.researchgate.net/profile/Abdullah-M-Al-Jazy" target="_blank">ResearchGate</a> |
-                <a href="https://twitter.com/AbdullahJazy" target="_blank">X (Twitter)</a> |
-                <a href="https://www.youtube.com/@abdullahmal-jazy" target="_blank">YouTube</a><br>
-                <strong>Telegram:</strong> <a href="https://t.me/AljazyAbdullah" target="_blank">Personal channel</a> |
-                <a href="https://t.me/AlgebraicGeometry1" target="_blank">Algebraic Geometry channel</a>
-            </p>
+<header class="topbar">
+    <div class="wrap">
+        <a class="brand" href="#top">Abdullah M. Al-jazy</a>
+        <nav aria-label="Sections">
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#beyond">Beyond math</a></li>
+                <li><a class="menu-cta" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="top">
+
+    <section class="hero">
+        <div class="wrap">
+            <div>
+                <p class="eyebrow">Mathematician</p>
+                <h1>Abdullah M. Al-jazy</h1>
+                <p class="tagline">Graduate student in mathematics at The University of Jordan, interested in analytic and computational number theory and the Langlands program.</p>
+                <p class="formula" aria-label="The Euler product: zeta of s equals the sum over n of n to the minus s, which equals the product over primes p of one over one minus p to the minus s.">
+                    <span class="eq" aria-hidden="true"><span><i>ζ</i>(<i>s</i>)</span> = <span class="op"><span class="sym">∑</span><span class="lim">n≥1</span></span><span><i>n</i><sup>−<i>s</i></sup></span> = <span class="op"><span class="sym">∏</span><span class="lim">p</span></span><span>(1 − <i>p</i><sup>−<i>s</i></sup>)<sup>−1</sup></span></span>
+                    <small aria-hidden="true">The Euler product</small>
+                </p>
+                <div class="actions">
+                    <a class="btn btn-primary" href="roadmap.html">Mathematics Roadmap <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    <a class="btn btn-ghost" href="talks/lean4-formal-verification-uj-2026.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6.5A2.5 2.5 0 0 0 4 5.5v13A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg> Lean 4 talk slides</a>
+                </div>
+                <ul class="socials" aria-label="Profiles">
+                    <li><a href="mailto:abdullah.aljazy@yahoo.com" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></a></li>
+                    <li><a href="https://github.com/AbdullaHMAljazy" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
+                    <li><a href="https://www.linkedin.com/in/abdullah-m-al-jazy-04315b27a" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.6c.55-1.02 1.9-1.9 3.8-1.9 3.6 0 4.4 2.2 4.4 5.2v6.1h-4v-5.4c0-1.3-.05-2.9-1.9-2.9-1.9 0-2.2 1.4-2.2 2.8v5.5H9.5z"/></svg></a></li>
+                    <li><a href="https://mathoverflow.net/users/517112/abdullah-m-al-jazy" target="_blank" rel="noopener" title="MathOverflow" aria-label="MathOverflow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.728 15.577v1.036c0 1.754-1.395 3.177-3.1 3.177h-.904L13.645 24v-4.21H5.371c-1.704 0-3.099-1.423-3.099-3.181v-1.032h19.456zM2.275 10.463h19.323v3.979H2.275v-3.979zm0-5.141h19.323v3.979H2.275V5.322zM18.575 0c1.681 0 3.023 1.42 3.023 3.178v1.034H2.275V3.178C2.275 1.422 3.67 0 5.375 0h13.2z"/></svg></a></li>
+                    <li><a href="https://www.researchgate.net/profile/Abdullah-M-Al-Jazy" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z"/></svg></a></li>
+                    <li><a href="https://twitter.com/AbdullahJazy" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a></li>
+                    <li><a href="https://www.youtube.com/@abdullahmal-jazy" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></li>
+                    <li><a href="https://t.me/AljazyAbdullah" target="_blank" rel="noopener" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a></li>
+                </ul>
+            </div>
+            <figure class="portrait">
+                <img src="profile.jpg" alt="Portrait of Abdullah M. Al-jazy" width="1400" height="1400">
+                <figcaption>The University of Jordan</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="wrap">
+            <div class="section-head">
+                <div>
+                    <p class="kicker">About me</p>
+                    <h2>Curiosity about the structures of mathematics</h2>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about-text">
+                    <p>My name is Abdullah M. Al-jazy. I am a graduate student at The University of Jordan. I received my B.Sc. in Mathematics from Al-Hussein Bin Talal University (AHU) in Ma'an (معان), Jordan. I am deeply passionate about pure mathematics, particularly Analytic Number Theory, Computational Number Theory, and the Langlands Program. My journey in mathematics has been fueled by curiosity and a desire to uncover the elegant structures that connect seemingly disparate areas of the subject.</p>
+                    <p>I aspire to contribute to the mathematical community by exploring challenging problems and engaging in collaborative research. Beyond mathematics, I value intellectual discussions, the exchange of ideas, and the opportunity to mentor or inspire others to pursue their academic goals.</p>
+                    <p>In the future, I hope to advance my studies, bridging my interests with practical applications and theoretical discoveries. I also aim to inspire younger students to see the beauty and depth of mathematics as a universal language of understanding.</p>
+                </div>
+                <dl class="facts">
+                    <div><dt>Position</dt><dd>Graduate student, The University of Jordan</dd></div>
+                    <div><dt>Education</dt><dd>B.Sc. in Mathematics, Al-Hussein Bin Talal University</dd></div>
+                    <div><dt>Research interests</dt><dd>Analytic and computational number theory, the Langlands program</dd></div>
+                    <div><dt>Email</dt><dd><a href="mailto:abdullah.aljazy@yahoo.com">abdullah.aljazy@yahoo.com</a></dd></div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="interests">
+        <div class="wrap">
+            <div class="section-head">
+                <div>
+                    <p class="kicker">Interests</p>
+                    <h2>What I work on and think about</h2>
+                </div>
+                <p>I have broad interests across the humanities, but my main interests are in the following areas.</p>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <span class="glyph" aria-hidden="true">ζ</span>
+                    <h3>Pure Mathematics</h3>
+                    <p class="lead">My main interest: analytic number theory, computational number theory and the Langlands program.</p>
+                </article>
+                <article class="card">
+                    <span class="glyph" aria-hidden="true">⊢</span>
+                    <h3>Logic &amp; Formal Verification</h3>
+                    <p>Using Lean 4 for mathematical proof verification.</p>
+                </article>
+                <article class="card">
+                    <span class="glyph" aria-hidden="true">λ</span>
+                    <h3>Computer Science</h3>
+                    <p>Open-source operating systems like Linux, theoretical computer science, LaTeX.</p>
+                </article>
+                <article class="card">
+                    <span class="glyph ar" aria-hidden="true">ع</span>
+                    <h3>Humanities</h3>
+                    <p>Islamic sciences, Arabic linguistics, history, geopolitics, sociology, psychology.</p>
+                </article>
+            </div>
+            <div class="tools">
+                <div>
+                    <h3>Programming &amp; data science</h3>
+                    <ul class="chips"><li>C++</li><li>Python</li><li>Rust</li><li>Go</li></ul>
+                </div>
+                <div>
+                    <h3>Mathematical tools</h3>
+                    <ul class="chips"><li>Lean 4</li><li>LaTeX</li><li>SageMath</li></ul>
+                </div>
+                <div>
+                    <h3>Operating system</h3>
+                    <ul class="chips"><li><a href="https://voidlinux.org/" target="_blank" rel="noopener">Void Linux</a></li><li><a href="https://dwm.suckless.org/" target="_blank" rel="noopener">dwm</a> from suckless</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="talks">
+        <div class="wrap">
+            <div class="section-head">
+                <div>
+                    <p class="kicker">Talks &amp; seminars</p>
+                    <h2>Talks</h2>
+                </div>
+                <a class="more-link" href="seminars.html">Seminar photos &rarr;</a>
+            </div>
+            <ol class="timeline">
+                <li class="talk featured">
+                    <div class="talk-card">
+                        <div class="talk-meta"><time datetime="2026-11-03">3 November 2026</time><span>The University of Jordan</span><span class="tag speaker">Speaker</span></div>
+                        <h3>Formal Verification and the Future of Mathematical Research</h3>
+                        <p class="sub">Lean 4: from a first proof to collaborative and AI-assisted mathematics</p>
+                        <div class="actions">
+                            <a class="btn btn-primary" href="talks/lean4-formal-verification-uj-2026.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6.5A2.5 2.5 0 0 0 4 5.5v13A2.5 2.5 0 0 0 6.5 21h11a2.5 2.5 0 0 0 2.5-2.5V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg> Slides (PDF)</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="talk">
+                    <div class="talk-meta"><time datetime="2024-11-12">12 November 2024</time><span>Al-Hussein Bin Talal University</span><span class="tag speaker">Speaker</span></div>
+                    <h3>Isomorphism: A Bridge Between Structures</h3>
+                    <p class="sub">Exploring the concept across different mathematical domains</p>
+                </li>
+                <li class="talk">
+                    <div class="talk-meta"><time datetime="2023-10-10">10 October 2023</time><span>Al-Hussein Bin Talal University</span><span class="tag">Colloquium</span></div>
+                    <h3>Hahn–Banach Theorem in Metric Spaces: An Introduction to Hyperconvexity</h3>
+                    <p class="who">Prof. Mohamed Amine Khamsi, Khalifa University, Abu Dhabi</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Sections to fill in later; uncomment when there is content.
+    <section class="section" id="projects"> Current Projects </section>
+    <section class="section" id="tutorials"> Some Tutorials </section>
+    <section class="section" id="teaching"> Teaching Experience </section>
+    -->
+
+    <section class="section section-alt" id="resources">
+        <div class="wrap">
+            <div class="section-head">
+                <div>
+                    <p class="kicker">Resources</p>
+                    <h2>Resources for learning mathematics</h2>
+                </div>
+            </div>
+            <div class="res">
+                <a class="res-feature res-link" href="roadmap.html">
+                    <p class="kicker">Free resource</p>
+                    <h3>Mathematics Roadmap</h3>
+                    <p>Books and video courses for every topic, from first principles to the Langlands program, including more than a hundred recorded courses from BIMSA.</p>
+                    <div class="stats">
+                        <div><strong>54</strong><span>Topics</span></div>
+                        <div><strong>308</strong><span>Books</span></div>
+                        <div><strong>333</strong><span>Video courses</span></div>
+                    </div>
+                    <span class="btn">Open the roadmap <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+                    <p class="fine">Built on Talal Al-Rawajfeh&rsquo;s Mathematics Roadmap.</p>
+                </a>
+                <div class="res-side">
+                    <a class="card res-link" href="textbooks.html">
+                        <h3>Math Textbooks <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+                        <p>Textbooks I find insightful and enjoyable to read, from analysis to arithmetic geometry.</p>
+                    </a>
+                    <a class="card res-link" href="mathematicians.html">
+                        <h3>Mathematicians&rsquo; Websites <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+                        <p>265 blogs and personal pages of mathematicians I follow.</p>
+                    </a>
+                    <a class="card res-link" href="https://github.com/AbdullaHMAljazy/mathematics-roadmap" target="_blank" rel="noopener">
+                        <h3>Roadmap on GitHub <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></h3>
+                        <p>The whole roadmap as one Markdown file. Suggestions are welcome.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="beyond">
+        <div class="wrap">
+            <div class="section-head">
+                <div>
+                    <p class="kicker">Beyond mathematics</p>
+                    <h2>Travels and writing</h2>
+                </div>
+            </div>
+            <div class="beyond">
+                <div class="card">
+                    <h3>Adventures</h3>
+                    <div class="strip">
+                        <a href="adventures.html"><img src="images/adventures/01.jpg" alt="The Makkah clock tower at night" loading="lazy"></a>
+                        <a href="adventures.html"><img src="images/adventures/02.jpg" alt="The Kaaba in Masjid al-Haram, Mecca" loading="lazy"></a>
+                        <a href="adventures.html"><img src="images/adventures/04.jpg" alt="Scuba diving over a coral reef" loading="lazy"></a>
+                        <a href="adventures.html"><img src="images/adventures/06.jpg" alt="Rocky shore at low tide" loading="lazy"></a>
+                    </div>
+                    <a class="more-link" href="adventures.html">See all 41 photos &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>Essays</h3>
+                    <ul class="essays">
+                        <li>Bases for Civilization <span class="soon">Coming soon</span></li>
+                        <li>My Childhood in the Countryside of Jordan <span class="soon">Coming soon</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="contact" id="contact">
+    <div class="wrap">
+        <p class="kicker">Contact</p>
+        <h2>Get in touch</h2>
+        <p>For questions about my work, the talks or the roadmap, email is the best way to reach me.</p>
+        <a class="mail" href="mailto:abdullah.aljazy@yahoo.com">abdullah.aljazy@yahoo.com</a>
+        <div class="channels">
+            <a href="https://t.me/AljazyAbdullah" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Personal Telegram channel</a>
+            <a href="https://t.me/AlgebraicGeometry1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> Algebraic Geometry channel</a>
+        </div>
+        <ul class="socials" aria-label="Profiles">
+            <li><a href="https://github.com/AbdullaHMAljazy" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/abdullah-m-al-jazy-04315b27a" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zM9.5 9.75h3.8v1.6c.55-1.02 1.9-1.9 3.8-1.9 3.6 0 4.4 2.2 4.4 5.2v6.1h-4v-5.4c0-1.3-.05-2.9-1.9-2.9-1.9 0-2.2 1.4-2.2 2.8v5.5H9.5z"/></svg></a></li>
+            <li><a href="https://mathoverflow.net/users/517112/abdullah-m-al-jazy" target="_blank" rel="noopener" title="MathOverflow" aria-label="MathOverflow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.728 15.577v1.036c0 1.754-1.395 3.177-3.1 3.177h-.904L13.645 24v-4.21H5.371c-1.704 0-3.099-1.423-3.099-3.181v-1.032h19.456zM2.275 10.463h19.323v3.979H2.275v-3.979zm0-5.141h19.323v3.979H2.275V5.322zM18.575 0c1.681 0 3.023 1.42 3.023 3.178v1.034H2.275V3.178C2.275 1.422 3.67 0 5.375 0h13.2z"/></svg></a></li>
+            <li><a href="https://www.researchgate.net/profile/Abdullah-M-Al-Jazy" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z"/></svg></a></li>
+            <li><a href="https://twitter.com/AbdullahJazy" target="_blank" rel="noopener" title="X (Twitter)" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg></a></li>
+            <li><a href="https://www.youtube.com/@abdullahmal-jazy" target="_blank" rel="noopener" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></li>
+        </ul>
+        <div class="legal">
+            <span>&copy; 2026 Abdullah M. Al-jazy</span>
+            <a href="https://github.com/AbdullaHMAljazy/AbdullaHMAljazy.github.io" target="_blank" rel="noopener">Source on GitHub</a>
         </div>
     </div>
-
-    <hr>
-
-    <h2>About Me</h2>
-    <p>
-        My name is Abdullah M. Al-jazy. I am a graduate student at The University of Jordan.
-        I received my B.Sc. in Mathematics from Al-Hussein Bin Talal University (AHU) in Ma'an (معان), Jordan.
-        I am deeply passionate about pure mathematics, particularly Analytic Number Theory, Computational Number Theory, and the Langlands Program.
-        My journey in mathematics has been fueled by curiosity and a desire to uncover the elegant structures that connect seemingly disparate areas of the subject.
-    </p>
-    <p>
-        I aspire to contribute to the mathematical community by exploring challenging problems and engaging in collaborative research.
-        Beyond mathematics, I value intellectual discussions, the exchange of ideas, and the opportunity to mentor or inspire others to pursue their academic goals.
-    </p>
-    <p>
-        In the future, I hope to advance my studies, bridging my interests with practical applications and theoretical discoveries.
-        I also aim to inspire younger students to see the beauty and depth of mathematics as a universal language of understanding.
-    </p>
-
-    <h2>Interests</h2>
-    Actually, I have a lot of interests in humanities knowledge, but my main interests are in the following areas:
-    <ul>
-        <li><strong>My main interest is Pure Mathematics:</strong> Analytic Number Theory, Computational Number Theory, the Langlands Program.</li>
-        <li><strong>Logic & Formal Verification:</strong> Using Lean4 for mathematical proof verification.</li>
-        <li><strong>Computer Science:</strong> Open source operating systems like Linux, Theoretical Computer Science, LaTeX.</li>
-        <li><strong>Humanities Knowledge:</strong> Islamic sciences, Arabic linguistics, History, Geopolitics, Sociology, Psychology.</li>
-    </ul>
-
-    <h2>Current Projects</h2>
-    <ul>
-
-    </ul>
-
-    <h2>Seminars</h2>
-    <ul>
-        <li>10/10/2023 &mdash; &ldquo;Hahn-Banach Theorem in Metric Spaces: An Introduction to Hyperconvexity&rdquo;.
-            Speaker: Prof. Mohamed Amine Khamsi, Khalifa University, Abu Dhabi, UAE.</li>
-        <li>12/11/2024 &mdash; &ldquo;Isomorphism: A Bridge Between Structures &ndash; Exploring the Concept Across Different Mathematical Domains&rdquo;.
-            Speaker: Abdullah M. Al-jazy, AHU, Jordan.</li>
-        <li>3/11/2026 &mdash; &ldquo;Formal Verification and the Future of Mathematical Research &ndash; Lean 4: from a first proof to collaborative and AI-assisted mathematics&rdquo;.
-            Speaker: Abdullah M. Al-jazy, The University of Jordan.
-            [<a href="talks/lean4-formal-verification-uj-2026.pdf" target="_blank">slides</a>]</li>
-    </ul>
-    <p><a href="seminars.html">Pictures of the seminars</a></p>
-
-    <h2>Tech & Tools</h2>
-    <ul>
-        <li><strong>Programming & Data Science:</strong> C++, python, Rust, Go.</li>
-        <li><strong>Mathematical Tools:</strong> Lean4, LaTeX, SageMath.</li>
-        <li><strong>Operating Systems:</strong> Linux (<a href="https://voidlinux.org/" target="_blank">Void</a>), Windows manager (<a href="https://dwm.suckless.org/" target="_blank">dwm</a>) from SUCKLESS.</li>
-    </ul>
-
-    <h2>Essays</h2>
-    <ul>
-        <li>Bases for Civilization</li>
-        <li>My Childhood in the Countryside of Jordan</li>
-    </ul>
-
-    <h2>Some Tutorials</h2>
-    <ul>
-
-    </ul>
-
-    <h2>Resources for Learning Math</h2>
-    <ul>
-        <li><a href="roadmap.html">Mathematics Roadmap</a> &mdash; books and video courses for every topic, from foundations to the Langlands program.</li>
-        <li><a href="textbooks.html">Math Textbooks</a> &mdash; textbooks I find insightful and enjoyable to read.</li>
-        <li><a href="mathematicians.html">Mathematicians' Websites</a> &mdash; blogs and personal pages of mathematicians.</li>
-    </ul>
-
-    <h2>Teaching Experience</h2>
-
-    <h2>Travels</h2>
-    <ul>
-        <li><a href="adventures.html">Adventures</a> &mdash; photos.</li>
-    </ul>
+</footer>
 
 </body>
 </html>
