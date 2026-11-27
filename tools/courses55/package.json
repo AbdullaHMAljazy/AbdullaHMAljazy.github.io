@@ -1,0 +1,16 @@
+{
+  "name": "courses55-build",
+  "version": "1.0.0",
+  "description": "Generator for the 55 Courses pages",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "katex": "^0.16.47"
+  },
+  "private": true,
+  "type": "module"
+}
